@@ -1,0 +1,89 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  width: auto;
+  height: 100px;
+}
+
+.container span {
+  margin: 0 5px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: #fcb1b1;
+  margin-top: 50px;
+  animation: 1s animate infinite;
+}
+
+@keyframes animate {
+  20% {
+    background: #f0f696;
+  }
+  50% {
+    margin-top: 10px;
+  }
+  80% {
+    background: #96f7d2;
+  }
+}
+
+.left-eye,
+.right-eye {
+  position: absolute;
+  top: 7px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgb(255, 31, 31);
+}
+
+.left-eye {
+  left: 7px;
+}
+
+.right-eye {
+  right: 9px;
+}
+
+.mouth {
+  position: absolute;
+  top: 12px;
+  left: 9px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border-bottom: 2px solid #ff5959;
+}
+
+span:nth-child(1) {
+  position: relative;
+  display: flex;
+  animation-delay: 0.2s;
+}
+
+span:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+span:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+span:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+span:nth-child(5) {
+  animation-delay: 1s;
+}
+
+span:nth-child(6) {
+  animation-delay: 1.2;
+}
